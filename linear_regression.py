@@ -231,8 +231,6 @@ ax.legend()
 ax.view_init(elev=30, azim=45)
 
 plt.tight_layout()
-plt.savefig('04_loss_surface_3d.png', dpi=300, bbox_inches='tight')
-print("Saved: 04_loss_surface_3d.png")
 plt.show()
 
 # 2D CONTOUR PLOT
@@ -256,8 +254,4 @@ plt.legend()
 plt.grid(True, alpha=0.3)
 
 plt.tight_layout()
-plt.savefig('05_loss_contour_2d.png', dpi=300, bbox_inches='tight')
-print("Saved: 05_loss_contour_2d.png")
 plt.show()
-
-print("\n✓ 3D and 2D loss visualization plots saved!")
