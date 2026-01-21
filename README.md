@@ -29,7 +29,7 @@ Each record corresponds to a single day for a hypothetical worker, with features
 - Mood Score – daily mood rating (1–10)
 - Stress Level – daily stress rating (1–10)
 
-## Project structure
+## Installation
 
 1. Clone the repository:
 ```bash
@@ -46,6 +46,15 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 pip install matplotlib
 pip install mpl_toolkits
 ```
+
+## Usage
+
+1. Run the linear regression model:
+```bash
+python linear_regression.py
+```
+
+
 
 
 
