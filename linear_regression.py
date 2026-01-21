@@ -11,6 +11,12 @@ from mpl_toolkits.mplot3d import Axes3D
 # Import dataset
 ds = pd.read_csv(r'synthetic_mental_health_dataset.csv')
 
+# Handling missing values
+ds.dropna(inplace=True)
+
+# Removing duplicate values
+ds.drop_duplicates(inplace=True)
+
 # Indepentend variables and dependent variable
 X = ds.iloc[:,:-2].values
 y = ds.iloc[:,-2:].values
