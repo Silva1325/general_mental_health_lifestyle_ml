@@ -8,6 +8,9 @@ import torch
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
+NUMERIC_FEATURES = ['sleep_hours', 'screen_time', 'exercise_minutes', 'daily_pending_tasks',
+                    'interruptions', 'fatigue_level', 'social_hours', 'coffee_cups']
+
 # Import dataset
 ds = pd.read_csv(r'synthetic_mental_health_dataset.csv')
 
@@ -16,6 +19,22 @@ ds.dropna(inplace=True)
 
 # Removing duplicate values
 ds.drop_duplicates(inplace=True)
+
+#ds_before = ds.copy()
+
+# Outlier detection and removal using Interquartile Range (IQR) method
+Q1 = ds[NUMERIC_FEATURES].quantile(0.25)
+Q3 = ds[NUMERIC_FEATURES].quantile(0.75)
+IQR = Q3 - Q1
+
+mask = ~((ds[NUMERIC_FEATURES] < (Q1 - 1.5 * IQR)) |
+         (ds[NUMERIC_FEATURES] > (Q3 + 1.5 * IQR))).any(axis=1)
+
+ds = ds[mask]
+
+#print("Before:", ds_before.shape)
+#print("After: ", ds.shape)
+#print("Removed rows:", len(ds_before) - len(ds))
 
 # Indepentend variables and dependent variable
 X = ds.iloc[:,:-2].values
