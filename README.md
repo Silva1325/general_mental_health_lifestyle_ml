@@ -10,4 +10,4 @@ A machine learning project that uses a linear regression model to predict mental
 
 ## Dataset
 
-The dataset chosen for this project is (https://www.kaggle.com/datasets/mabubakrsiddiq/general-mental-health-and-lifestyle-dataset/data)
+The dataset chosen for this project is [Mental Health Dataset](https://www.kaggle.com/datasets/mabubakrsiddiq/general-mental-health-and-lifestyle-dataset/data) from Kaggle.
