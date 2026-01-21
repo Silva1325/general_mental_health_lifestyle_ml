@@ -54,6 +54,11 @@ pip install mpl_toolkits
 python linear_regression.py
 ```
 
+## Methodology
+
+### 1. Data Preprocessing
+
+
 
 
 
