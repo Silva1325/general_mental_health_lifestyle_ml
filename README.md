@@ -1,7 +1,7 @@
 # general_mental_health_lifestyle_ml
 
 ![Python](https://img.shields.io/badge/python-3.12-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.2-EE4C2C)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.4.1+cpu-EE4C2C)
 ![CUDA](https://img.shields.io/badge/CUDA-12.1-76B900)
 
 ## Project Overview
@@ -16,7 +16,7 @@ This dataset represents synthetic daily mental health and lifestyle data for gen
 
 Each record corresponds to a single day for a hypothetical worker, with features including:
 
-- leep Hours – total hours slept
+- Sleep Hours – total hours slept
 - Screen Time – daily time spent on digital devices
 - Exercise Minutes – physical activity per day
 - Daily Pending Tasks – unfinished work items or responsibilities
@@ -28,3 +28,36 @@ Each record corresponds to a single day for a hypothetical worker, with features
 - Weather – categorical: sunny, cloudy, rainy, snowy
 - Mood Score – daily mood rating (1–10)
 - Stress Level – daily stress rating (1–10)
+
+## Project structure
+
+1. Clone the repository:
+```bash
+git clone 
+cd GENERAL_MENTAL_HEALTH_LIFESTYLE_ML
+```
+
+2. Install required dependencies:
+```bash
+pip install numpy
+pip install pandas
+pip install -U scikit-learn
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+pip install matplotlib
+pip install mpl_toolkits
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
