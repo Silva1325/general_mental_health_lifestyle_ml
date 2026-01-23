@@ -42,7 +42,7 @@ y = ds.iloc[:,-2:].values
 
 # Encoding categorical data
 # Transforming diet_quality and weather columns
-ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(drop='first'), [8,9])],remainder='passthrough')
+ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [8,9])],remainder='passthrough')
 X = ct.fit_transform(X)
 
 # Seperate into train and test
