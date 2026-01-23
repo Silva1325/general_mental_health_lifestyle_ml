@@ -86,9 +86,9 @@ for epoch in range(epochs):
     loss = criterion(outputs,y_train)
 
     # Backward pass and optimization
-    optimizer.zero_grad()
-    loss.backward()
-    optimizer.step()
+    optimizer.zero_grad()  # Clear previous gradients
+    loss.backward()        # Compute gradients
+    optimizer.step()       # Update weights using SGD
 
     losses.append(loss.item())
 
