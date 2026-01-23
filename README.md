@@ -67,7 +67,25 @@ Data preprocessing is a critical foundation for any machine learning project, di
    - weather: [snowy, sunny, rainy, cloudy]
 5. Feature Scaling: Since the model uses Stochastic Gradient Descent (SGD) for optimization, feature scaling was essential. SGD is sensitive to feature magnitudes—unscaled features with different ranges can cause slow or unstable convergence. I standardized all input features using StandardScaler. The target variables were not scaled as they already share the same range (1-10), making scaling unnecessary for the outputs.
    
+### 2. Model Selection
+- **Algorithm:** Linear Regression
+- **Rationale:** Provides interpretable coefficients showing the direct impact of each lifestyle factor on mental health outcomes
+- **Implementation:** Scikit-learn's LinearRegression class
 
+### 3. Feature Analysis
+- **Numerical Features:** Continuous variables (age, sleep hours, exercise frequency, etc.)
+- **Categorical Features:** Discrete variables (gender, occupation, lifestyle factors)
+- Correlation analysis to identify key predictors
+
+### 4. Model Training & Evaluation
+- Training on historical data with lifestyle and behavioral features
+- Performance metrics: Mean Squared Error (MSE), R² score
+- Visualization of training loss and prediction accuracy
+
+### 5. Visualization & Interpretation
+- 2D and 3D loss surface plots for optimization analysis
+- Feature relationship plots to understand parameter impacts
+- Categorical feature boxplots for group comparisons
 
 
 
