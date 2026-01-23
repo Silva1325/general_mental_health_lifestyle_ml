@@ -59,13 +59,13 @@ python linear_regression.py
 ### 1. Data Preprocessing
 
 Data preprocessing is a critical foundation for any machine learning project, directly impacting model accuracy, training efficiency, and prediction reliability. My preprocessing pipeline consisted of the following steps:
-- Handling Missing Values: I removed all rows containing missing values to ensure data completeness and prevent errors during model training.
-- Removing Duplicates: Duplicate entries were identified and removed to avoid bias and redundancy in the dataset.
-- Outlier Detection and Removal: I applied the Interquartile Range (IQR) method to detect and remove outliers. This involved calculating the first quartile (Q1) and third quartile (Q3), then computing IQR = Q3 - Q1. Data points falling below Q1 - 1.5×IQR or above Q3 + 1.5×IQR were filtered out to eliminate extreme values that could skew the model.
-- Encoding Categorical Variables: Two categorical features required transformation into numerical format:
-   diet_quality: [poor, average, good]
-   weather: [snowy, sunny, rainy, cloudy]
-- Feature Scaling: Since the model uses Stochastic Gradient Descent (SGD) for optimization, feature scaling was essential. SGD is sensitive to feature magnitudes—unscaled features with different ranges can cause slow or unstable convergence. I standardized all input features using StandardScaler. The target variables were not scaled as they already share the same range (1-10), making scaling unnecessary for the outputs.
+1. Handling Missing Values: I removed all rows containing missing values to ensure data completeness and prevent errors during model training.
+2. Removing Duplicates: Duplicate entries were identified and removed to avoid bias and redundancy in the dataset.
+3. Outlier Detection and Removal: I applied the Interquartile Range (IQR) method to detect and remove outliers. This involved calculating the first quartile (Q1) and third quartile (Q3), then computing IQR = Q3 - Q1. Data points falling below Q1 - 1.5×IQR or above Q3 + 1.5×IQR were filtered out to eliminate extreme values that could skew the model.
+4. Encoding Categorical Variables: Two categorical features required transformation into numerical format:
+diet_quality: [poor, average, good]
+weather: [snowy, sunny, rainy, cloudy]
+5. Feature Scaling: Since the model uses Stochastic Gradient Descent (SGD) for optimization, feature scaling was essential. SGD is sensitive to feature magnitudes—unscaled features with different ranges can cause slow or unstable convergence. I standardized all input features using StandardScaler. The target variables were not scaled as they already share the same range (1-10), making scaling unnecessary for the outputs.
    
 
 
