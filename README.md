@@ -72,13 +72,10 @@ Data preprocessing is a critical foundation for any machine learning project, di
 
 Linear regression is a supervised machine learning model that estimates a linear relationship between independent variables and a dependent variable:
 
-
-$\` y = f[x, φ] \`$
-$\` = φ₀ + φ₁x₁ + φ₂x₂ + φ₃x₃ + ... + φₚxₚ \`$
-
-  
-
-
+$$
+y = f[x, φ]
+  = φ₀ + φ₁x₁ + φ₂x₂ + φ₃x₃ + ... + φₚxₚ
+$$
 
 Where:
 - **y** is the output (dependent variable)
