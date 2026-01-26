@@ -73,7 +73,9 @@ Data preprocessing is a critical foundation for any machine learning project, di
 #### What is Supervised Learning?
 
 A supervised learning model defines a mapping from one or more inputs to one or more outputs. For example, the input might be the mileage and age of a car in order to predict its market value.
+
 The model is just a mathematical function. When the inputs are passed through this function, it computes the output, and this is termed inference. The model equation describes a family of possible relationships between the input and output, and the parameters specify the particular relationship.
+
 When we train a model, we find parameters that describe the true relationship between the inputs and outputs. A learning algorithm takes a training set of input/output pairs and manipulates their parameters until their inputs predict the output as closely as possible.
 If the model works well for these training pairs, then we hope for it to work well with new data to make good predictions.
 
