@@ -88,8 +88,19 @@ Where:
 
 In this case, I'm predicting two dependent variables, mood score and stress level, based on the independent variables, making this a multiple linear regression. So we would have something like this:
 
-y₁ = f₁[x, φ¹] = φ₀¹ + φ₁¹x₁ + φ₂¹x₂ + ... + φₚ¹xₚ
-y₂ = f₂[x, φ²] = φ₀² + φ₁²x₁ + φ₂²x₂ + ... + φₚ²xₚ
+$$
+\begin{aligned}
+y₁ &= f₁[x, φ¹] \\
+   &= φ₀¹ + φ₁¹x₁ + φ₂¹x₂ + ... + φₚ¹xₚ
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+y₂ &= f₂[x, φ²] \\
+   &= φ₀² + φ₁²x₁ + φ₂²x₂ + ... + φₚ²xₚ
+\end{aligned}
+$$
 
 Where:
 - **y₁** is the output of mood score
