@@ -74,6 +74,8 @@ Linear regression is a supervised machine learning model that estimates a linear
 
 $$
 y = f[x, φ]
+$$
+$$
   = φ₀ + φ₁x₁ + φ₂x₂ + φ₃x₃ + ... + φₚxₚ
 $$
 
