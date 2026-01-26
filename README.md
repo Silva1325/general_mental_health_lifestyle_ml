@@ -70,6 +70,15 @@ Data preprocessing is a critical foundation for any machine learning project, di
    
 ### 2. Model Selection
 
+#### What is Supervised Learning?
+
+A supervised learning model defines a mapping from one or more inputs to one or more outputs. For example, the input might be the mileage and age of a car in order to predict its market value.
+The model is just a mathematical function. When the inputs are passed through this function, it computes the output, and this is termed inference. The model equation describes a family of possible relationships between the input and output, and the parameters specify the particular relationship.
+When we train a model, we find parameters that describe the true relationship between the inputs and outputs. A learning algorithm takes a training set of input/output pairs and manipulates their parameters until their inputs predict the output as closely as possible.
+If the model works well for these training pairs, then we hope for it to work well with new data to make good predictions.
+
+### Linear regression
+
 Linear regression is a supervised machine learning model that estimates a linear relationship between independent variables and a dependent variable:
 
 $$
@@ -86,7 +95,11 @@ Where:
 - **φ₁, φ₂, φ₃, ..., φₚ** are the coefficients (weights)
 - **φ** represents all parameters {φ₀, φ₁, φ₂, ..., φₚ} 
 
-In this case, I'm predicting two dependent variables, mood score and stress level, based on the independent variables, making this a multiple linear regression. So we would have something like this:
+In this case, I'm predicting two dependent variables based on the independent variables, making this a multiple linear regression. 
+- **Independent variables:** Sleep hours, screen time, exercise minutes, daily pending tasks, interruptions, fatigue level, social hours, coffee cups, diet quality, weather
+- **Dependent variables:** Mood score, stress level
+
+Being that said, mathematically, we would have something like this:
 
 $$
 \begin{aligned}
@@ -105,6 +118,7 @@ $$
 Where:
 - **y₁** is the output of mood score
 - **y₂** is the output of stress level
+- Where each output yᵢ has its own set of parameters φⁱ = {φ₀ⁱ, φ₁ⁱ, φ₂ⁱ, ..., φₚⁱ}.
 
 ### 3. Feature Analysis
 - **Numerical Features:** Continuous variables (age, sleep hours, exercise frequency, etc.)
