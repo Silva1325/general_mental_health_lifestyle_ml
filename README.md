@@ -74,8 +74,8 @@ Linear regression is a supervised machine learning model that estimates a linear
 
 $$
 \begin{aligned}
-&y = f[x, φ] \\
-&\quad= φ₀ + φ₁x₁ + φ₂x₂ + φ₃x₃ + ... + φₚxₚ
+y &= f[x, φ] \\
+  &= φ₀ + φ₁x₁ + φ₂x₂ + φ₃x₃ + ... + φₚxₚ
 \end{aligned}
 $$
 
@@ -90,19 +90,15 @@ In this case, I'm predicting two dependent variables, mood score and stress leve
 
 $$
 \begin{aligned}
-&y₂ = f₂[x, φ²] \\
-&\quad= φ₀² + φ₁²x₁ + φ₂²x₂ + ... + φₚ²xₚ
+y₁ &= f₁[x, φ¹] \\
+   &= φ₀¹ + φ₁¹x₁ + φ₂¹x₂ + ... + φₚ¹xₚ
 \end{aligned}
 $$
 
 $$
-\vdots
-$$
-
-$$
 \begin{aligned}
-&yₘ = fₘ[x, φᵐ] \\
-&\quad= φ₀ᵐ + φ₁ᵐx₁ + φ₂ᵐx₂ + ... + φₚᵐxₚ
+y₂ &= f₂[x, φ²] \\
+   &= φ₀² + φ₁²x₁ + φ₂²x₂ + ... + φₚ²xₚ
 \end{aligned}
 $$
 
