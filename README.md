@@ -127,7 +127,23 @@ Where:
 - **Categorical Features:** Discrete variables (gender, occupation, lifestyle factors)
 - Correlation analysis to identify key predictors
 
+The feature analysis reveals comprehensive insights into how various lifestyle and environmental factors influence mental health outcomes (mood score and stress level). This multi-dimensional analysis examines both numerical and categorical variables to understand their predictive power.
+
+The model analyzes eight continuous variables that capture daily behavioral patterns and their impact on mental wellbeing:
+- **Sleep Hours:** Sleep duration shows a direct correlation with mood scores and inverse relationship with stress levels, highlighting the fundamental role of rest in mental health
+- **Exercise Minutes:** Physical activity emerges as a protective factor, with increased exercise correlating with improved mood and reduced stress
+- **Interruptions:** Frequency of daily interruptions shows detrimental effects on both mental health metrics
+- **Social Hours:** Time spent in social interactions demonstrates positive effects on mood while potentially reducing stress levels
+- **Screen Time:** Prolonged screen exposure demonstrates negative associations with mood and positive correlation with stress, reflecting modern digital lifestyle impacts
+- **Daily Pending Tasks:** Task burden exhibits strong positive correlation with stress levels and negative association with mood scores
+- **Fatigue Level:** Self-reported fatigue serves as both a predictor and outcome variable, closely linked to stress and mood fluctuations
+- **Coffee Cups:** Caffeine consumption patterns reveal complex, potentially non-linear relationships with mental health outcomes
+
+The image below shows the correlation of these eight features against both target variables ,mood_score and stress_level.
+
 <img src="data_analysis\02_numerical_features_relationships.png" width="1000">
+
+### Sleep
 
 ### 4. Model Training & Evaluation
 - Training on historical data with lifestyle and behavioral features
