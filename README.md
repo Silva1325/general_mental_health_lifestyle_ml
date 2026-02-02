@@ -136,7 +136,7 @@ The model analyzes eight continuous variables that capture daily behavioral patt
 - **Fatigue Level:** Self-reported fatigue serves as both a predictor and outcome variable, closely linked to stress and mood fluctuations
 - **Coffee Cups:** Caffeine consumption patterns reveal complex, potentially non-linear relationships with mental health outcomes
 
-The image below shows the correlation of these eight features against both target variables ,mood_score and stress_level.
+The image below shows the correlation of these eight features against both target variables, mood_score and stress_level.
 
 <img src="data_analysis\02_numerical_features_relationships.png" width="1000">
 
