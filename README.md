@@ -123,9 +123,6 @@ Where:
 - Where each output yᵢ has its own set of parameters φⁱ = {φ₀ⁱ, φ₁ⁱ, φ₂ⁱ, ..., φₚⁱ}.
 
 ### 3. Feature Analysis
-- **Numerical Features:** Continuous variables (age, sleep hours, exercise frequency, etc.)
-- **Categorical Features:** Discrete variables (gender, occupation, lifestyle factors)
-- Correlation analysis to identify key predictors
 
 The feature analysis reveals comprehensive insights into how various lifestyle and environmental factors influence mental health outcomes (mood score and stress level). This multi-dimensional analysis examines both numerical and categorical variables to understand their predictive power.
 
