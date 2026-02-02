@@ -139,25 +139,46 @@ The model analyzes eight continuous variables that capture daily behavioral patt
 <img src="data_analysis\02_numerical_features_relationships.png" width="1000">
 
 
-#### Sleep Hours
+#### Sleep hours
 
  - Overall there is a lot of density around the [6,8] interval which means that most of the people in this dataset sleep around 6-8 hours a day.
  - **Mood score:** We can clearly see a trend emerging in this graph where the more you sleep the better your mood will be. Individuals that sleep below 6 hours a day tend to have a worse mood. Individuals that sleep more than 6 hours tend to have a better mood.
  - **Stress level:** Here we have a similar behaviour. Individuals with less sleep hours show higher stress levels. As sleep hours increase, stress levels decrease significantly. The pattern shows an inverse relationship where adequate sleep (7-9 hours) is associated with lower stress levels (1-4 range), while sleep deprivation (<5 hours) correlates with elevated stress (4-9 range).
 
-#### Screen Time
+#### Screen time
  - The data shows a dense concentration of points across various screen time levels (0-12 hours), with most people falling in the 4-8 hour range.
  - **Mood score:** There is a negative correlation between screen time and mood. Individuals with high screen time (8-12 hours) tend to have lower mood scores, predominantly in the 3-6 range. Those with moderate screen time (2-4 hours) show better mood scores, typically in the 6-8 range.
  - **Stress level:** Screen time shows a positive correlation with stress. Higher screen exposure (8-12 hours) is associated with elevated stress levels (4-7 range), while lower screen time corresponds to reduced stress levels (1-3 range).
 
-#### Exercise Minutes
+#### Exercise minutes
  - The distribution shows wide variation in exercise habits, ranging from sedentary (0-20 minutes) to highly active (120+ minutes).
  - **Mood score:** There is a strong positive correlation between exercise and mood. Individuals who exercise regularly (60-120 minutes) show significantly higher mood scores (7-9 range). Sedentary individuals (<20 minutes) tend to have lower mood scores (3-5 range).
  - **Stress level:** Exercise shows an inverse relationship with stress. Regular physical activity (60+ minutes) is associated with lower stress levels (1-3 range), while minimal exercise correlates with higher stress (5-8 range).
 
+#### Daily pending tasks
+ - The visualization shows distinct vertical bands, indicating tasks are counted as discrete integers (0-10 tasks).
+ - **Mood score:** High task burden (7-10 pending tasks) is clearly associated with lower mood scores. Most individuals with 8-10 pending tasks show mood scores in the 3-6 range, while those with fewer tasks (0-3) tend to have mood scores in the 6-9 range.
+ - **Stress level:** There is a strong positive correlation between pending tasks and stress. Individuals with high task loads (7-10 tasks) show stress levels predominantly in the 5-9 range, while those with low task burden (0-3 tasks) experience stress levels in the 1-4 range.
 
+#### Interruptions
+- Data shows discrete vertical bands representing interruption counts (0-14 interruptions per day).
+- **Mood score:** Frequent interruptions negatively impact mood. Individuals experiencing many interruptions (10-14 per day) show lower mood scores (3-6 range), while those with few interruptions (0-3 per day) have higher mood scores (6-9 range).
+- **Stress level:** Interruptions show a strong positive correlation with stress. High interruption frequency (10+ per day) is associated with elevated stress levels (5-8 range), while minimal interruptions correspond to lower stress (1-3 range).
 
+#### Fatigue level
+Fatigue shows a continuous distribution (scale 0-10), suggesting subjective self-reporting of tiredness.
+- **Mood score:** There is a strong negative correlation between fatigue and mood. High fatigue levels (7-10) are associated with low mood scores (2-5 range), while low fatigue (1-3) correlates with high mood scores (7-9 range). The relationship appears nearly linear.
+- **Stress level:** Fatigue shows a strong positive correlation with stress. Individuals reporting high fatigue (7-10) consistently experience high stress levels (5-9 range), while those with low fatigue show low stress (1-3 range).
 
+#### Social Hours
+- Social engagement varies from isolated (0-1 hours) to highly social (4-5 hours per day).
+- **Mood score:** There is a positive correlation between social hours and mood. Individuals with moderate to high social engagement (2-4 hours) show better mood scores (6-9 range), while socially isolated individuals (0-1 hour) tend to have lower mood scores (3-6 range).
+- **Stress level:** Social hours show a negative correlation with stress. Higher social engagement (3-5 hours) is associated with lower stress levels (1-4 range), while social isolation (0-1 hour) correlates with higher stress (4-7 range).
+
+#### Coffe Cups
+- The visualization shows discrete vertical bands (0-6 cups per day), indicating counted daily caffeine consumption.
+- **Mood score:** The relationship appears relatively scattered but shows some patterns. Moderate coffee consumption (1-2 cups) doesn't show strong negative effects on mood, with scores distributed across 4-8 range. Very high consumption (5-6 cups) shows slightly lower mood scores on average (4-7 range).
+- **Stress level:** Higher coffee consumption shows a positive association with stress. Individuals consuming 4-6 cups per day tend to have higher stress levels (4-8 range), while those consuming 0-2 cups show more distributed but generally lower stress levels (2-6 range). This may indicate compensatory caffeine use in response to stress rather than purely causal.
  
 ### 4. Model Training & Evaluation
 - Training on historical data with lifestyle and behavioral features
