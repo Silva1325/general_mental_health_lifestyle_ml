@@ -136,12 +136,29 @@ The model analyzes eight continuous variables that capture daily behavioral patt
 - **Fatigue Level:** Self-reported fatigue serves as both a predictor and outcome variable, closely linked to stress and mood fluctuations
 - **Coffee Cups:** Caffeine consumption patterns reveal complex, potentially non-linear relationships with mental health outcomes
 
-The image below shows the correlation of these eight features against both target variables, mood_score and stress_level.
-
 <img src="data_analysis\02_numerical_features_relationships.png" width="1000">
 
-### Sleep
 
+#### Sleep Hours
+
+ - Overall there is a lot of density around the [6,8] interval which means that most of the people in this dataset sleep around 6-8 hours a day.
+ - **Mood score:** We can clearly see a trend emerging in this graph where the more you sleep the better your mood will be. Individuals that sleep below 6 hours a day tend to have a worse mood. Individuals that sleep more than 6 hours tend to have a better mood.
+ - **Stress level:** Here we have a similar behaviour. Individuals with less sleep hours show higher stress levels. As sleep hours increase, stress levels decrease significantly. The pattern shows an inverse relationship where adequate sleep (7-9 hours) is associated with lower stress levels (1-4 range), while sleep deprivation (<5 hours) correlates with elevated stress (4-9 range).
+
+#### Screen Time
+ - The data shows a dense concentration of points across various screen time levels (0-12 hours), with most people falling in the 4-8 hour range.
+ - **Mood score:** There is a negative correlation between screen time and mood. Individuals with high screen time (8-12 hours) tend to have lower mood scores, predominantly in the 3-6 range. Those with moderate screen time (2-4 hours) show better mood scores, typically in the 6-8 range.
+ - **Stress level:** Screen time shows a positive correlation with stress. Higher screen exposure (8-12 hours) is associated with elevated stress levels (4-7 range), while lower screen time corresponds to reduced stress levels (1-3 range).
+
+#### Exercise Minutes
+ - The distribution shows wide variation in exercise habits, ranging from sedentary (0-20 minutes) to highly active (120+ minutes).
+ - **Mood score:** There is a strong positive correlation between exercise and mood. Individuals who exercise regularly (60-120 minutes) show significantly higher mood scores (7-9 range). Sedentary individuals (<20 minutes) tend to have lower mood scores (3-5 range).
+ - **Stress level:** Exercise shows an inverse relationship with stress. Regular physical activity (60+ minutes) is associated with lower stress levels (1-3 range), while minimal exercise correlates with higher stress (5-8 range).
+
+
+
+
+ 
 ### 4. Model Training & Evaluation
 - Training on historical data with lifestyle and behavioral features
 - Performance metrics: Mean Squared Error (MSE), R² score
