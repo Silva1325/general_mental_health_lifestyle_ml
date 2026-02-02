@@ -166,7 +166,7 @@ The model analyzes eight continuous variables that capture daily behavioral patt
 - **Stress level:** Interruptions show a strong positive correlation with stress. High interruption frequency (10+ per day) is associated with elevated stress levels (5-8 range), while minimal interruptions correspond to lower stress (1-3 range).
 
 #### Fatigue level
-Fatigue shows a continuous distribution (scale 0-10), suggesting subjective self-reporting of tiredness.
+- Fatigue shows a continuous distribution (scale 0-10), suggesting subjective self-reporting of tiredness.
 - **Mood score:** There is a strong negative correlation between fatigue and mood. High fatigue levels (7-10) are associated with low mood scores (2-5 range), while low fatigue (1-3) correlates with high mood scores (7-9 range). The relationship appears nearly linear.
 - **Stress level:** Fatigue shows a strong positive correlation with stress. Individuals reporting high fatigue (7-10) consistently experience high stress levels (5-9 range), while those with low fatigue show low stress (1-3 range).
 
