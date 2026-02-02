@@ -127,7 +127,7 @@ Where:
 - **Categorical Features:** Discrete variables (gender, occupation, lifestyle factors)
 - Correlation analysis to identify key predictors
 
-<img src="data_analysis\01_training_loss_and_predictions.png" width="200">
+<img src="data_analysis\01_training_loss_and_predictions.png" width="1000">
 
 ### 4. Model Training & Evaluation
 - Training on historical data with lifestyle and behavioral features
